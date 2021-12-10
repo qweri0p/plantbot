@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const { prefix } = require('./config.json');
+const { spamChannelList } = require('./config.json');
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
 require('dotenv').config();
 
@@ -9,15 +9,12 @@ const github = require("./commands/github.js");
 
 client.once('ready', () => {
   client.user.setPresence({ activities: [{ name: 'Plant Gang in Super Smash Bros.' }], status: 'online' });
-  console.log("Ready!")
+  console.log("Ready!");
 });
 
 client.on('message', message => {
   if (message.author.bot) return;
-  const args = message.content.slice(prefix.length).trim().split(' ');
-  const command = args.shift().toLowerCase();
-  console.log(message.content);
-  switch (message.content) {
+  switch (message.content.toLowerCase()) {
     /*case 'hello':
     case 'hallo':
       hello.command(message);
@@ -33,7 +30,8 @@ client.on('message', message => {
       message.channel.send("PLANT GANG RISE UP!!!");
       break;
     default:
-      message.channel.send("Plant Gang");
+      if (spamChannelList.includes(String(message.channelId)) == true) {
+        message.channel.send("Plant Gang"); }
       break;
   }
 
