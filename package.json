@@ -1,0 +1,22 @@
+{
+  "name": "plantbot",
+  "version": "1.0.0",
+  "description": "plant gang",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qweri0p/plantbot.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "qweriop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qweri0p/plantbot/issues"
+  },
+  "homepage": "https://github.com/qweri0p/plantbot#readme"
+}
