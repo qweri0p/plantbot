@@ -13,7 +13,7 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.author.bot) return;
+  if (message.author == 918912481903124543) return;
   switch (message.content.toLowerCase()) {
     /*case 'hello':
     case 'hallo':
@@ -30,7 +30,7 @@ client.on('message', message => {
       message.channel.send("PLANT GANG RISE UP!!!");
       break;
     default:
-      if (spamChannelList.includes(String(message.channelId)) == true) {
+      if (spamChannelList.includes(String(message.channelId))) {
         message.channel.send("Plant Gang"); }
       break;
   }
