@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const { prefix } = require('./config.json');
-const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });'
-require('dotenv').config();'
+const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
+require('dotenv').config();
 
 //importing commands
 const hello = require("./commands/hello.js");
@@ -16,19 +16,23 @@ client.on('message', message => {
   const args = message.content.slice(prefix.length).trim().split(' ');
   const command = args.shift().toLowerCase();
   console.log(message.content);
-  switch (command) {
-    case 'hello':
+  switch (message.content) {
+    /*case 'hello':
     case 'hallo':
       hello.command(message);
-    case 'gh':
-    case 'github':
-    case 'qweriop':
+      break;*/
+    case 'p github':
+    case 'p qweriop':
       github.gh(message);
       break;
-    case 'update':
+    case 'p update':
       github.update(message);
       break;
+    case 'p plant':
+      message.channel.send("PLANT GANG RISE UP!!!");
+      break;
     default:
+      message.channel.send("Plant Gang");
       break;
   }
 
