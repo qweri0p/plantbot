@@ -8,6 +8,7 @@ const hello = require("./commands/hello.js");
 const github = require("./commands/github.js");
 
 client.once('ready', () => {
+  client.user.setPresence({ activities: [{ name: 'Plant Gang in Super Smash Bros.' }], status: 'online' });
   console.log("Ready!")
 });
 
