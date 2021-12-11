@@ -23,6 +23,8 @@ client.on('messageCreate', message => {
     case 'p qweriop':
       github.gh(message);
       break;
+    case 'p based':
+      message.channel.send("true");
     case 'p update':
       github.update(message);
       break;
