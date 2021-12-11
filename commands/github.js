@@ -1,9 +1,6 @@
-const simpleGit = require('simple-git');
-
 function update(message) {
     if (message.author.id == '354943770464354306') {
-        simpleGit.pull();
-        message.channel.send('Updated!');
+        process.exit(0);
     } else {
         message.channel.send('Only qweriop#0416 can update this bot.');
     }
