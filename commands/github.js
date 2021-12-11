@@ -8,4 +8,8 @@ function update(message) {
 function gh(message) {
   message.channel.send("https://github.com/qweri0p/plantbot");
 }
-module.exports = { update, gh };                                
+function website(message) {
+    message.channel.send("https://qweri0p.github.io/plantbot");
+}
+
+module.exports = { update, gh, website };                                

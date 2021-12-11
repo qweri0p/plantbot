@@ -26,6 +26,11 @@ client.on('messageCreate', message => {
     case 'p update':
       github.update(message);
       break;
+    case 'p site':
+    case 'p website':
+      github.website(message);
+      break;
+    case 'p gang':
     case 'p plant':
       message.channel.send("PLANT GANG RISE UP!!!");
       break;
