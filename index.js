@@ -25,6 +25,7 @@ client.on('messageCreate', message => {
       break;
     case 'p based':
       message.channel.send("true");
+      break;
     case 'p update':
       github.update(message);
       break;
