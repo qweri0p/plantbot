@@ -9,10 +9,10 @@ const github = require("./commands/github.js");
 
 client.once('ready', () => {
   client.user.setPresence({ activities: [{ name: 'Plant Gang in Super Smash Bros.' }], status: 'online' });
-  console.log("Ready!");
+  console.log("Plant Gang moment.");
 });
 
-client.on('message', message => {
+client.on('messageCreate', message => {
   if (message.author == 918912481903124543) return;
   switch (message.content.toLowerCase()) {
     /*case 'hello':
@@ -28,6 +28,11 @@ client.on('message', message => {
       break;
     case 'p plant':
       message.channel.send("PLANT GANG RISE UP!!!");
+      break;
+    case 'p blm':
+    case 'p plm':
+    case 'p lives':
+      message.channel.send("Plant Lives Matter. #PLM");
       break;
     default:
       if (spamChannelList.includes(String(message.channelId))) {
