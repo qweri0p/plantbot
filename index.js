@@ -42,6 +42,9 @@ client.on('messageCreate', message => {
     case 'p lives':
       message.channel.send("Plant Lives Matter. #PLM");
       break;
+    case 'p help':
+      hello.help(message, Discord);
+      break;
     default:
       if (spamChannelList.includes(String(message.channelId))) {
         message.channel.send("Plant Gang"); }
