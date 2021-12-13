@@ -56,6 +56,7 @@ client.on('messageCreate', message => {
       break;
     case 'p tree':
       message.channel.send("tree gaming");
+      break;
     case 'plant bang':
       message.channel.send('harder daddy');
       break;
