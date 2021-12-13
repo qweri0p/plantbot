@@ -45,6 +45,11 @@ client.on('messageCreate', message => {
     case 'p help':
       hello.help(message, Discord);
       break;
+    case 'p amongus':
+    case 'p sus':
+    case 'p amogus':
+      message.channel.send('when the plant is sus');
+      break;
     default:
       if (spamChannelList.includes(String(message.channelId))) {
         message.channel.send("Plant Gang"); }
