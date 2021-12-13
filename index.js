@@ -51,6 +51,11 @@ client.on('messageCreate', message => {
     case 'p amogus':
       message.channel.send('when the plant is sus :scream:');
       break;
+    case 'p boom':
+      message.channel.send('boom bros');
+      break;
+    case 'p tree':
+      message.channel.send("tree gaming");
     case 'plant bang':
       message.channel.send('harder daddy');
       break;
