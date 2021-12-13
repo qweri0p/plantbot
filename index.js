@@ -47,8 +47,9 @@ client.on('messageCreate', message => {
       break;
     case 'p amongus':
     case 'p sus':
+    case 'p sussy':
     case 'p amogus':
-      message.channel.send('when the plant is sus');
+      message.channel.send('when the plant is sus :scream:');
       break;
     default:
       if (spamChannelList.includes(String(message.channelId))) {
