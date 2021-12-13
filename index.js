@@ -51,6 +51,9 @@ client.on('messageCreate', message => {
     case 'p amogus':
       message.channel.send('when the plant is sus :scream:');
       break;
+    case 'plant bang':
+      message.channel.send('harder daddy');
+      break;
     default:
       if (spamChannelList.includes(String(message.channelId))) {
         message.channel.send("Plant Gang"); }
