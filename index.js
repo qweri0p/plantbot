@@ -45,6 +45,11 @@ client.on('messageCreate', message => {
     case 'p help':
       hello.help(message, Discord);
       break;
+    case 'p duits':
+    case 'p german':
+    case 'p deutsch':
+      message.channel.send('Pflanzen Trupp');
+      break;
     case 'p amongus':
     case 'p sus':
     case 'p sussy':
