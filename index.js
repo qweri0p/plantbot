@@ -19,6 +19,11 @@ client.on('messageCreate', message => {
     case 'hallo':
       hello.command(message);
       break;*/
+    case 'p russian':
+    case 'p ruski':
+    case 'p blyat':
+      message.channel.send('банда растений');
+      break; 
     case 'p github':
     case 'p qweriop':
       github.gh(message);

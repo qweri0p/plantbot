@@ -1,6 +1,6 @@
 #!/bin/bash
 while true; 
-do node index.js
+do node .
 git pull
 echo Updated!
 done

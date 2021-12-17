@@ -4,21 +4,21 @@
   "description": "plant gang",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qweri0p/plantbot.git"
   },
   "keywords": [
-    "discord"
+    "discord bot"
   ],
   "author": "qweriop",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/qweri0p/plantbot/issues"
   },
-  "homepage": "https://github.com/qweri0p/plantbot#readme",
+  "homepage": "https://qweri0p.github.io/plantbot",
   "dependencies": {
     "discord.js": "^13.3.1",
     "dotenv": "^10.0.0"
