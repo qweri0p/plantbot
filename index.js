@@ -22,7 +22,7 @@ client.on('messageCreate', message => {
     case 'p fnaf':
     case 'p freddy':
     case 'fnaf':
-      message.channel.send('fnaf!!', {files: ["https://qweri0p.github.io/images/fnaf.gif"]});
+      message.channel.send({files: ['./images/fnaf.gif']})
       break;
     case 'p russian':
     case 'p ruski':

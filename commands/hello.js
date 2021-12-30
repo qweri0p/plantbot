@@ -11,6 +11,7 @@ function help(message, Discord) {
     .addField("p based", "true", true)
     .addField("p sus", "amognus sus", true)
     .addField("p ruski", "cyka plant", true)
+    .addField('p fnaf', 'freddd', true)
     .setFooter("Plant gang")
     
     message.channel.send({ embeds:[helpEmbed] });
