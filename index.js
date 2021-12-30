@@ -8,7 +8,7 @@ const hello = require("./commands/hello.js");
 const github = require("./commands/github.js");
 
 client.once('ready', () => {
-  client.user.setPresence({ activities: [{ name: 'Plant Gang in Super Smash Bros.' }], status: 'online' });
+  client.user.setPresence({ activities: [{ name: 'Plant Gang in Super Smash Bros. Ultimate' }], status: 'online' });
   console.log("Plant Gang moment.");
 });
 
@@ -19,6 +19,11 @@ client.on('messageCreate', message => {
     case 'hallo':
       hello.command(message);
       break;*/
+    case 'p fnaf':
+    case 'p freddy':
+    case 'fnaf':
+      message.channel.send('fnaf!!', {files: ["https://qweri0p.github.io/images/fnaf.gif"]});
+      break;
     case 'p russian':
     case 'p ruski':
     case 'p blyat':
