@@ -75,6 +75,10 @@ client.on('messageCreate', message => {
     case 'plant bang':
       message.channel.send('harder daddy');
       break;
+    case 'p gex':
+    case 'p gecs':
+      message.channel.send({files: ['./images/gex.gif']})
+      break;
     default:
       if (spamChannelList.includes(String(message.channelId))) {
         message.channel.send("Plant Gang"); }
