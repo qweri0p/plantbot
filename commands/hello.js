@@ -12,6 +12,7 @@ function help(message, Discord) {
     .addField("p sus", "amognus sus", true)
     .addField("p ruski", "cyka plant", true)
     .addField('p fnaf', 'freddd', true)
+    .addField('p gex', '100 gecs!', true)
     .setFooter("Plant gang")
     
     message.channel.send({ embeds:[helpEmbed] });
