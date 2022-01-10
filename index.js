@@ -73,11 +73,16 @@ client.on('messageCreate', message => {
       message.channel.send("tree gaming");
       break;
     case 'plant bang':
+    case 'p bang':
       message.channel.send('harder daddy');
       break;
     case 'p gex':
     case 'p gecs':
       message.channel.send({files: ['./images/gex.gif']})
+      break;
+    case 'p game':
+    case 'p gaming':
+      message.channel.send({files: ['./images/fnaf-plant.png']});
       break;
     default:
       if (spamChannelList.includes(String(message.channelId))) {
