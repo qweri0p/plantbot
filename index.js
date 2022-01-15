@@ -78,15 +78,19 @@ client.on('messageCreate', message => {
       break;
     case 'p gex':
     case 'p gecs':
-      message.channel.send({files: ['./images/gex.gif']})
+      message.channel.send({files: ['./images/gex.gif']});
       break;
     case 'p game':
     case 'p gaming':
       message.channel.send({files: ['./images/fnaf-plant.png']});
       break;
+    case 'p hit':
+      message.channel.send({files: ['./images/hit.png']});
+      break;
     default:
       if (spamChannelList.includes(String(message.channelId))) {
-        message.channel.send("Plant Gang"); }
+        message.channel.send("Plant Gang");
+      }
       break;
   }
 
