@@ -20,7 +20,7 @@ function help(message, Discord) {
     
     message.channel.send({ embeds:[helpEmbed] });
 }
-function sugoma(message) {
+function sugoma(message, Discord) {
   const sugomaEmbed = new Discord.MessageEmbed()
   .setTitle("sougon deez nuts")
   .setDescription("sus")

@@ -92,7 +92,7 @@ client.on('messageCreate',message => {
       tax.command(message);
       break;
     case 'p sugoma':
-      hello.sugoma(message);
+      hello.sugoma(message, Discord);
       break;
     default:
       if (spamChannelList.includes(String(message.channelId))) {
