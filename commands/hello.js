@@ -24,7 +24,7 @@ function sugoma(message, Discord) {
   const sugomaEmbed = new Discord.MessageEmbed()
   .setTitle("sougon deez nuts")
   .setDescription("sus")
-  .setColor("#000000")
+  .setColor("#ffffff")
   .setURL('https://sugoma.xyz/')
   .setImage('https://sugoma.xyz/content/sumoga.jpg')
   .setFooter("sussiest plant alive")
