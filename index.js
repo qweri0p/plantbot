@@ -6,13 +6,14 @@ require('dotenv').config();
 //importing commands
 const hello = require("./commands/hello.js");
 const github = require("./commands/github.js");
+const tax = require("./commands/tax.js");
 
 client.once('ready', () => {
   client.user.setPresence({ activities: [{ name: 'Plant Gang in Super Smash Bros. Ultimate' }], status: 'online' });
   console.log("Plant Gang moment.");
 });
 
-client.on('messageCreate', message => {
+client.on('messageCreate',message => {
   if (message.author == 918912481903124543) return;
   switch (message.content.toLowerCase()) {
     /*case 'hello':
@@ -87,13 +88,17 @@ client.on('messageCreate', message => {
     case 'p hit':
       message.channel.send({files: ['./images/hit.png']});
       break;
+    case 'p tax':
+      tax.command(message);
+      break;
+    case 'p sugoma':
+      hello.sugoma(message);
+      break;
     default:
       if (spamChannelList.includes(String(message.channelId))) {
         message.channel.send("Plant Gang");
       }
       break;
   }
-
 });
-
 client.login(process.env.TOKEN);
