@@ -16,10 +16,6 @@ client.once('ready', () => {
 client.on('messageCreate',message => {
   if (message.author == 918912481903124543) return;
   switch (message.content.toLowerCase()) {
-    /*case 'hello':
-    case 'hallo':
-      hello.command(message);
-      break;*/
     case 'p fnaf':
     case 'p freddy':
     case 'fnaf':
@@ -75,6 +71,7 @@ client.on('messageCreate',message => {
       break;
     case 'plant bang':
     case 'p bang':
+    case 'p sex':
       message.channel.send('harder daddy');
       break;
     case 'p gex':
