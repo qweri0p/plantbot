@@ -85,6 +85,10 @@ client.on('messageCreate',message => {
     case 'p hit':
       message.channel.send({files: ['./images/hit.png']});
       break;
+    case 'p dang':
+    case 'monokuma':
+      message.channel.send({files: ['./images/monokuma.png']});
+      break;
     case 'p tax':
       tax.command(message);
       break;
