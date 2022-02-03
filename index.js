@@ -49,11 +49,6 @@ client.on('messageCreate',message => {
     case 'p lives':
       message.channel.send("Plant Lives Matter. #PLM");
       break;
-    case 'p dang':
-    case 'monokuma':
-    case 'danganronpa':
-      message.channel.send({files: ['./images/danganronpa.png']})
-      break;
     case 'p help':
       hello.help(message, Discord);
       break;
