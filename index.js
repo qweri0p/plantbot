@@ -19,13 +19,19 @@ client.on('messageCreate',message => {
     case 'p fnaf':
     case 'p freddy':
     case 'fnaf':
-      message.channel.send({files: ['./images/fnaf.gif']})
+      message.channel.send({files: ['./images/fnaf.gif']});
       break;
     case 'p russian':
     case 'p ruski':
     case 'p blyat':
       message.channel.send('банда растений');
-      break; 
+      break;
+    case 'p miss':
+    case 'p mis':
+    case 'miss':
+    case 'mis':
+      message.channel.send({files:['./images/miss.png']});
+      break;
     case 'p github':
     case 'p qweriop':
       github.gh(message);
