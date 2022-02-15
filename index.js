@@ -96,6 +96,10 @@ client.on('messageCreate',message => {
     case 'p car':
       message.channel.send({files: ['./images/carby.jpg']});
       break;
+    case 'p vending':
+    case 'p machine':
+      message.channel.send({files: ['./images/vending.png']});
+      break;
     case 'p dang':
     case 'monokuma':
       message.channel.send({files: ['./images/danganronpa.png']});
