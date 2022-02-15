@@ -30,7 +30,7 @@ client.on('messageCreate',message => {
     case 'p mis':
     case 'miss':
     case 'mis':
-      message.channel.send({files:['./images/miss.png']});
+      message.channel.send({files: ['./images/miss.png']});
       break;
     case 'p github':
     case 'p qweriop':
