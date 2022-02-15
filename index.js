@@ -89,6 +89,7 @@ client.on('messageCreate',message => {
       message.channel.send({files: ['./images/fnaf-plant.png']});
       break;
     case 'p hit':
+    case 'hit':
       message.channel.send({files: ['./images/hit.png']});
       break;
     case 'p dang':
