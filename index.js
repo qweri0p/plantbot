@@ -92,6 +92,10 @@ client.on('messageCreate',message => {
     case 'hit':
       message.channel.send({files: ['./images/hit.png']});
       break;
+    case 'p kirby':
+    case 'p car':
+      message.channel.send({files: ['./images/carby.jpg']});
+      break;
     case 'p dang':
     case 'monokuma':
       message.channel.send({files: ['./images/danganronpa.png']});
