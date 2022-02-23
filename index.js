@@ -15,7 +15,7 @@ client.once('ready', () => {
 
 client.on('messageCreate',message => {
   if (message.author == 918912481903124543 || message.author == 945767252517613659) return;
-  if message.content.toLowerCase().startsWith('ben') {
+  if (message.content.toLowerCase().startsWith('ben')) {
     return;
   }
   switch (message.content.toLowerCase()) {
