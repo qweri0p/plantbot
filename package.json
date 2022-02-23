@@ -20,7 +20,7 @@
   },
   "homepage": "https://qweri0p.github.io/plantbot",
   "dependencies": {
-    "discord.js": "^13.3.1",
+    "discord.js": "^13.6.0",
     "dotenv": "^10.0.0"
   }
 }
