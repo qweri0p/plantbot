@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
-const { spamChannelList } = require('./config.json');
+const cfg = require('./config.json');
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
-require('dotenv').config();
 
 //importing commands
 const hello = require("./commands/hello.js");
@@ -123,10 +122,10 @@ client.on('messageCreate',message => {
       hello.sugoma(message, Discord);
       break;
     default:
-      if (spamChannelList.includes(String(message.channelId))) {
+      if (cfg.spamChannelList.includes(String(message.channelId))) {
         message.channel.send("Plant Gang");
       }
       break;
   }
 });
-client.login(process.env.TOKEN);
+client.login(cfg.config);
