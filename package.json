@@ -4,7 +4,7 @@
   "description": "plant gang",
   "main": "index.js",
   "scripts": {
-    "test": "node .", 
+    "test": "node .",
     "start": "sh run.sh"
   },
   "repository": {
